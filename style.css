@@ -121,5 +121,9 @@ body {
     }
     .menu li{
         font-size : 15px;
+        padding-left: 15px;
+    }
+    .menu {
+        margin-right: 5%;
     }
 }
