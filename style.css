@@ -1,0 +1,122 @@
+@keyframes transitionIn {
+    from {
+        opacity : 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity : 1;
+        transform: rotateY(0);
+    }
+}
+
+*{
+    margin: 0;
+}
+body {
+    background-color: rgba(26,28,28,1);
+    color: white;
+}
+
+.nav{
+    background: rgb(54,54,57);
+    background: linear-gradient(90deg, rgba(54,54,57,1) 0%, rgba(53,53,57,1) 47%, rgba(26,28,28,1) 100%);
+    padding: 5px;
+    padding-top: 6px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.menu{
+    list-style-type: none;
+    float: right;
+    margin-right: 10%;
+    margin-top: 2px;
+}
+.menu li{
+    float : left;
+    display: block;
+    padding : 10px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.menu a{
+    text-decoration: none;
+    color : white;
+}
+#myself{
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin-left: 50px;
+    
+}
+#bd-sec {
+    margin-top: 150px;
+    margin-left: 100px;
+    display: flex;
+    animation: transitionIn 2s;
+}
+#bd-sec h1 {
+    font-size:60px;
+}
+
+.imgtxt {
+    float: left;
+    /* padding-left: 100px; */
+    padding-top: 20px;
+    margin-left : 5%;
+    margin-right: 20%;
+}
+#bd-sec p {
+    font-size: 20px;
+    line-height: 40px;
+}
+.menu a:hover {
+    text-shadow: 0 10px 15px rgba(255, 255, 255, 0.4), 0 -10px 15px rgba(255, 255, 255, 0.4);
+}
+#myself:hover {
+    transform: perspective(200px) translateZ(5px);
+    box-shadow: 0 5px 15px rgba(230, 205, 227, 0.4);
+    transition: transform 0.8s, box-shadow 0.5s;
+}
+#footer {
+    margin-top : 150px;
+    text-align: center;
+    background: rgb(54,54,57);
+    background: linear-gradient(90deg, rgba(26,28,28,1) 0%, rgba(53,53,57,1) 100%);
+    padding : 20px;
+    padding-bottom: 10px;
+}
+#footer img {
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height : 40px;
+}
+#footer img:hover {
+   filter : drop-shadow(0 5px 15px rgba(255, 255, 255, 0.4));
+   transform: perspective(200px) translateZ(5px);
+}
+#footer p {
+    line-height: 25px;
+}
+@media only screen and (max-width: 768px) {
+    #bd-sec {
+        display: flex;
+        flex-direction: column;
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+    .imgtxt {
+        float: none;
+        margin-right : 5%;
+    }
+    #myself:hover {
+        transform: none;
+    }
+    #myself {
+        margin-left: 0;
+        float: none;
+    }
+}
