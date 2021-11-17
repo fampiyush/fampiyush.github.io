@@ -125,5 +125,6 @@ body {
     }
     .menu {
         margin-right: 5%;
+        float: none;
     }
 }
