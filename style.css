@@ -119,4 +119,7 @@ body {
         margin-left: 0;
         float: none;
     }
+    .menu li{
+        font-size : 15px;
+    }
 }
